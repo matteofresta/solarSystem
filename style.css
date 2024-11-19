@@ -1,0 +1,307 @@
+body
+{
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: black;
+}
+
+.container
+{
+    font-size: 6px;
+    width: 40em;
+    height: 40em;
+    position: relative;
+}
+
+img
+{
+    width: 130%;
+    height: 130%;
+}
+
+.sole
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 15em;
+    left: 15em;
+    width: 10em;
+    height: 10em;
+    border-radius: 50%;
+    box-shadow: 0 0 3em rgb(255, 128, 0);
+    animation: orbit 50s linear infinite;
+}
+
+.galassia
+{
+    position: absolute;
+}
+
+.luna,
+.marte,
+.mercurio,
+.nettuno,
+.plutone,
+.terra,
+.saturno,
+.uranio,
+.venere,
+.giove
+{
+    position: absolute;
+    border-style: solid;
+    border-color: white transparent transparent transparent;
+    border-width: 0.1em 0.1em 0 0;
+    border-radius: 50%;
+}
+
+.stelle
+{
+    position: absolute;
+    background: white;
+    border-radius: 50%;
+    z-index: -1;
+}
+
+.mercurio
+{
+    top: 12.5em;
+    left: 12.5em;
+    width: 15em;
+    height: 15em;
+    animation: orbit 68.7s linear infinite;
+}
+
+.venere
+{
+    top: 10em;
+    left: 10em;
+    width: 20em;
+    height: 20em;
+    animation: orbit 48.7s linear infinite;
+}
+
+.terra
+{
+    top: 6em;
+    left: 6em;
+    width: 28em;
+    height: 28em;
+    animation: orbit 36.5s linear infinite;
+}
+
+.luna
+{
+    top: 2em;
+    right: -1em;
+    width: 7em;
+    height: 7em;
+    animation: orbit 2.7s linear infinite;
+}
+
+.marte
+{
+    top: 2em;
+    left: 2.5em;
+    width: 36em;
+    height: 36em;
+    animation: orbit 26.5s linear infinite;
+}
+
+.giove
+{
+    top: -2em;
+    left: -2em;
+    width: 45em;
+    height: 45em;
+    animation: orbit 21s linear infinite;
+}
+
+.saturno
+{
+    top: -7em;
+    left: -7em;
+    width: 55em;
+    height: 55em;
+    animation: orbit 17s linear infinite;
+}
+
+.uranio
+{
+    top: -12em;
+    left: -12em;
+    width: 65em;
+    height: 65em;
+    animation: orbit 19s linear infinite;
+}
+
+.nettuno
+{
+    top: -17em;
+    left: -17em;
+    width: 75em;
+    height: 75em;
+    animation: orbit 15s linear infinite;
+}
+
+.plutone
+{
+    top: -22em;
+    left: -22em;
+    width: 85em;
+    height: 85em;
+    animation: orbit 18s linear infinite;
+}
+
+.galassia
+{
+    top: -30em;
+    left: 30em;
+    width: 85em;
+    height: 85em;
+}
+
+.galassia::before
+{
+    content: '';
+    position: absolute;
+}
+
+.luna::before,
+.marte::before,
+.mercurio::before,
+.nettuno::before,
+.plutone::before,
+.terra::before,
+.saturno::before,
+.uranio::before,
+.venere::before,
+.giove::before
+{
+    content: '';
+    position: absolute;
+    border-radius: 50%;
+    animation: orbit 50s linear infinite;
+}
+
+.mercurio::before
+{
+    top: 1.5em;
+    right: .8em;
+    width: 2em;
+    height: 2em;
+    background-image: url("images/mercury.png");
+    background-size: cover;
+}
+
+.venere::before
+{
+    top: 2em;
+    right: 2em;
+    width: 2em;
+    height: 2em;
+    background-image: url("images/venus.png");
+    background-size: cover;
+}
+
+.terra::before
+{
+    top: 3em;
+    right: 0;
+    width: 5em;
+    height: 5em;
+    background-image: url("images/earth.png");
+    background-size: cover;
+}
+
+.luna::before
+{
+    top: .8em;
+    right: .2em;
+    width: 1.2em;
+    height: 1.2em;
+    background-image: url("images/moon.png");
+    background-size: cover;
+}
+
+.marte::before
+ {
+     top: 5em;
+     right: 3em;
+     width: 3em;
+     height: 3em;
+     background-image: url("images/mars.png");
+     background-size: cover;
+ }
+
+.giove::before
+{
+    top: 6em;
+    right: 3em;
+    width: 5em;
+    height: 5em;
+    background-image: url("images/jupiter.png");
+    background-size: cover;
+}
+
+.saturno::before
+{
+    top: 7.5em;
+    right: 5em;
+    width: 4.5em;
+    height: 4.5em;
+    background-image: url("images/saturn.png");
+    background-size: cover;
+}
+
+.uranio::before
+{
+    top: 9em;
+    right: 6.5em;
+    width: 4em;
+    height: 4em;
+    background-image: url("images/uranus.png");
+    background-size: cover;
+}
+
+.nettuno::before
+{
+    top: 10em;
+    right: 8em;
+    width: 4em;
+    height: 4em;
+    background-image: url("images/neptune.png");
+    background-size: cover;
+}
+
+.plutone::before
+{
+    top: 11em;
+    right: 10em;
+    width: 4em;
+    height: 4em;
+    background-image: url("images/pluto.png");
+    background-size: cover;
+}
+
+.galassia::before
+{
+    top: 11em;
+    right: 10em;
+    width: 5em;
+    height: 5em;
+    background-image: url("images/Galaxy-PNG-Transparent-Image.png");
+    background-size: cover;
+}
+
+@keyframes orbit {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
